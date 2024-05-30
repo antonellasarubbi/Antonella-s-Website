@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antonella Sarubbi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background: #ff5733;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .bold {
+            color: #ff5733;
+            font-weight: bold;
+        }
+        .minimalistic {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact-form, .question-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .question-form input, .contact-form textarea, .question-form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button, .question-form button {
+            padding: 10px;
+            border: none;
+            background: #ff5733;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .contact-form button:hover, .question-form button:hover {
+            background: #cc4627;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Antonella Sarubbi</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
+            <a href="#blog">Blog</a>
+            <a href="#ask">Ask Me Questions</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about" class="minimalistic">
+            <h2>About Me</h2>
+            <p>Hi, I'm <span class="bold">Antonella Sarubbi</span>. I'm in my 20s, generating 40k a year. I'm focused on an individualistic mindset, creating my own meaning to things from my interpretation for my benefit. I'm very bubbly, smart, agile, and fun. Welcome to my personal space!</p>
+        </section>
+        <section id="contact" class="minimalistic">
+            <h2>Contact</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id="blog" class="minimalistic">
+            <h2>Blog</h2>
+            <p>Coming soon! Stay tuned for my thoughts and updates.</p>
+        </section>
+        <section id="ask" class="minimalistic">
+            <h2>Ask Me Questions</h2>
+            <form class="question-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Question" required></textarea>
+                <button type="submit">Ask</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Antonella Sarubbi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
